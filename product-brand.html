@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Brand-Partner | Expo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <link rel="icon" href="/images/logo-black.png">
+    <link href="css/components.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body id="product-brand" class="bg-black">
+<div class="uk-offcanvas-content">
+    <div w3-include-html="header.html"></div>
+    <div class="bg-blur-headding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 uk-position-center text-center mt-35">
+                        <div class="col-md-12 text-white">
+                            <h3 class="hd-pagination">บริษัททั้งหมด</h3>
+                        </div>
+                        <ul class="uk-breadcrumb justify-content-center">
+                            <li><a href="/" class="text-white text-20">หน้าแรก</a></li>
+                            <li><span class="text-danger text-20">บริษัท</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+        <div class="container pt-5">
+            <div id="users" class="row ">
+                <div class="col-md-12">
+                    <div class="filter-group row pb-1">
+                        <div class="form-group col-lg-6 col-xl-4">
+                            <form class="w-100 uk-search uk-search-default box-shad ">
+                                <a href="" class=" uk-search-icon-flip bg-white bd-white bd-search" uk-search-icon></a>
+                                <input class="search uk-search-input bg-white" type="text" placeholder="ค้นหา...">
+                            </form>
+                        </div>
+                        <div class="form-group col-lg-6 col-xl-3 text-white d-flex flex-sm-row flex-column justify-content-center">
+                            <div class="radio-inline p-1">
+                                <label>
+                                    <input class="filter-all" type="radio" value="all" name="local" id="local-all" checked /> บริษัททั้งหมด
+                                </label>
+                            </div>
+                            <div class="radio-inline p-1">
+                                <label>
+                                    <input class="filter" type="radio" value="thai" name="local" id="local-female" /> บริษัทประเทศไทย
+                                </label>
+                            </div>
+                            <div class="radio-inline p-1">
+                                <label>
+                                    <input class="filter" type="radio" value="abroad" name="local" id="local-male" /> บริษัทต่างชาติ
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group col-lg-6 col-xl-3 text-white d-flex justify-content-center">
+                            <div class="row">
+                                <div class="p-1 m-auto">
+                                    <p class="">จังหวัด</p>
+                                </div>
+                                <div class="p-1">
+                                    <select id="ddlFilter" class="form-control w-150">
+                                        <option value="">ทั้งหมด</option>
+                                        <option value="กรุงเทพ">กรุงเทพ</option>
+                                        <option value="เชียงใหม่">เชียงใหม่</option>
+                                        <option value="ปัตตานี">ปัตตานี</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-lg-6 col-xl-2 text-white text-center pt-1">
+                            <button class="btn btn-danger" onclick="resetList();">ล้างการกรอง</button>
+                        </div>
+                    </div>
+                        <div class="col-md-12 text-right pt-3  swap-resp">
+                            <img src="images/icon-grid-w.svg" id="grid" class="icon-hv" width="30">
+                            <img src="images/icon-list-w.svg" id="list" class="icon-hv" width="30">
+                        </div>
+                        <div class="row list pt-3">
+                            <div class="item col-md-6 col-lg-3" data-local="abroad">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                            <img src="images/logo-partner/101-pictures.png" class="image" >
+                                        </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">101 Pictures</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                
+                                        <p class="address mb-0">2 Kasemsamran 2 Soi 13 Phrakhanong-Nuea Wattana Bagkok 10110 THAILAND</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="thai">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/2hand.png" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">2Hands Films</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">1213/506 LADPHRAO SOI 94, PLUBPLA, WANG TONGLANG, BANGKOK, THAILAND</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="thai">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/4473-production.png" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">4473 Production</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">N/A</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="thai">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/454Mediahouse.jpg" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">454Mediahouse</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">312/25 ซอย ลาดพร้าว 87 แยก 10(จันทราสุข)แขวงวังทองหลาง เขตวังทองหลาง กรุงเทพฯ 10310</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="thai">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/9naa.jpg" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">9Naa Production</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">N/A</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="thai">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/999-studio.png" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">9966 Production</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">N/A</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="thai">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/a-grand-elephat.png" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">A Grand Elephant</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- <p class="address mb-0">Ramkhamhaeng Soi 24 , Yaek12-1, Humark,Bangkapi,Bangkok 10240,Thailand</p> -->
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="thai">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/aleph-bata.png" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">Alpha Beta Films</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">522/155 Klang Muang 1 Village, Soi Ramkhamhaeng 39, Prachauthit Road, Wantonglang, Bangkok 10310 Thailand</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="thai">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/aries.jpg" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">Aries Shoot</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">10/95 Sukhumvit 13 Klongtoey Nua, Wattana Bangkok, Thailand 10110</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="abroad">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/apostrophe-films.jpg" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">Apostrophefilms</h5>
+                                        <div class="d-flex pb-2">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">99/197 moo.5, nakhon-in Rd., bangphai muang-nonthaburi, nonthaburi thailand 11000</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="abroad">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/aleph-bata.png" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">Alephbata Production </h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">603/114 LPN Cultural Center,Prachuthit Rd., Samsennok,Huikwang Dist.Bangkok ,10310Thailand</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="thai">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/bangkok-production-company.jpg" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">BANGKOK PRODUCTION</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">1055/822 State Tower, 36th Floor, Room 822, Bangrak, Silom Road, Silom, Bangkok 10500, Thailand</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="thai">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/bigblue-production.png" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">BIGBLUE PRODUCTION</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">15 Soi Sukhumvit 61, Sukhumvit Rd.,Khlongtan-Nua, Vadhana, Bangkok, Thailand 10110</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="abroad">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/Benetone_Films_Logo.png" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">Benetone Films</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">21/10 Soi Ruamrudee 1 Ploenchit Rd., LumpiniPloenchit Rd., Lumpini Bangkok 10330 Thailand</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="thai">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/bear-house-production.png" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">Bear House Production</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">N/A</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="abroad">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/bangkok-video-production.png" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">Bangkok Video Production</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">N/A</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="thai">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/creamcream-house.png" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">CREAMCREAMHOUSE</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">224/30 Ladprao 94 (Panjamitr) Ladprao, Rd. Pubpla Wangthonglang Bangkok 10310 Thailand</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="thai">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/chukumlung-production.png" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">Chukumlung Production House</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">48/31 หมู่บ้านพรีเมียมเพรส ซอยสุคนธสวัสดิ์38 แขวงลาดพร้าวเขตลาดพร้าว, 10230 Bangkok, Thailand</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="thai">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/commetive-production.jpg" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">COMMETIVE PRODUCTION</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">703 หมู่บ้าน แกรนด์ ลาดพร้าว ซอย 80/3ซอย หมู่บ้านไทยวิลเลจ วังทองหลาง กรุงเทพมหานคร 10310 ประเทศไทย</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="thai">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/centerpoint-entertaiment.jpg" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">Centerpoint Entertainment </h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">Centerpoint entertainment co,.ltd 9,11 Sukumvit 105 ,Lasalle road bangna, bangna Bangkok 10260</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="thai">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/chang-phap.png" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">Changphap Group </h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">N/A</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="thai">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/dir-4.jpg" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">DIR4FILM</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">6/1 SOI ARI 5, PAHOLYOTHIN RD. SAMSENNAI,PHAYATHAI, BANGKOK 10400, THAILAND.</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item col-md-6 col-lg-3" data-local="thai">
+                                <div class="thumbnail card">
+                                    <div class="img-event">
+                                        <img src="images/logo-partner/deluxe-logo.jpg" class="image">
+                                    </div>
+                                    <div class="caption mh-240 card-body pl-3 pr-3 pb-3">
+                                        <h5 class="name">Deluxe  Production</h5>
+                                        <div class="d-flex pb-2 justify-content-center ">
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-world-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/facebook.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/icon-line-color.png" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                            <div class="p-2">
+                                                <a href="#">
+                                                    <img src="images/ico-tel-color.svg" alt="" class="ico-social-hv" width="27">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="address mb-0">45 Mooban Seri 1,Soi Ramkhamhaeng 24, Lane 22,Huamak, Bangkapi,Bangkok 10250 Thailand</p>
+                                    </div>
+                                    <div class="caption card-body custom-caption text-center">
+                                        <a href="detail-company.html"><button class="btn btn-primary">แสดงเพิ่มเติม</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="no-result">ไม่พบบริษัทที่คุณค้นหา</div>
+                        <ul class="pagination uk-pagination uk-flex-center pt-3 pb-3"></ul>
+                    </div>
+                        <!-- ------------------------------------------------- -->
+            </div> 
+        </div> 
+<a href="javascript:" id="return-to-top"><img src="images/totop.png" width="100%" class="img-totop"></a>
+<div w3-include-html="footer.html"></div>
+</div>    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/list.min.js"></script>
+    <script src="js/lodash.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script>
+        includeHTML();
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#list').click(function(event){event.preventDefault();$('#users .item').addClass('list-group-item');});
+            $('#grid').click(function(event){event.preventDefault();$('#users .item').removeClass('list-group-item');$('#users .item').addClass('grid-group-item');});
+        });
+    </script>
+   
+</body>
+</html>

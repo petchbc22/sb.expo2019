@@ -1,0 +1,23 @@
+[
+  {
+    "data_local":"thai",
+    "namecompany":"101 Pictures",
+    "imagespath":"../images/logo-partner/101-pictures.jpg",
+    "location":"2 Kasemsamran 2 Soi 13 Phrakhanong-Nuea Wattana Bagkok 10110 THAILAND",
+    "link":"../detail-company.html"
+},
+  {
+    "data_local":"thai",
+    "namecompany":"2Hands Films",
+    "imagespath":"../images/logo-partner/2hand.png",
+    "location":"1213/506 LADPHRAO SOI 94, PLUBPLA, WANG TONGLANG, BANGKOK, THAILAND",
+    "link":"../detail-company.html"
+},
+  {
+    "data_local":"abroad",
+    "namecompany":"4473 Production",
+    "imagespath":"../images/logo-partner/4473-production.png",
+    "location":"N/A",
+    "link":"../detail-company.html"
+}
+]

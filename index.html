@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Storyboard - Expo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <link href="css/components.css" rel="stylesheet">
+    <link rel="icon" href="/images/logo-black.png">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+</head>
+<body id="homepage">
+<div class="uk-offcanvas-content">    
+    <div w3-include-html="header.html"></div>
+<!-- banner -->
+<div  uk-slideshow="animation: push;max-height:600;min-height:500;autoplay:true;">
+    <div class="uk-position-relative uk-visible-toggle uk-light">
+        <ul class="uk-slideshow-items">
+            <li>
+                <div class="slide-event uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                    <img src="images/4.MONEY-EXPO-2018.jpg" alt="" uk-cover>
+                </div>
+                <div class="uk-position-center uk-position-small block-on-slideshow text-center animate-custom">
+                    <h2 class="hd-slide">house production expo</h2>
+                    <a href="#" class="custom-link"><div class="custom-button">Read More</div></a>
+                </div>  
+            </li>
+            <li>
+                <div class="slide-event uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right">
+                    <img src="images/bn-bg.jpg" alt="" uk-cover>
+                </div>
+                <div class="uk-position-center uk-position-small block-on-slideshow text-center animate-custom">
+                    <h2 class="hd-slide">digital media expo</h2>
+                    <a href="#" class="custom-link"><div class="custom-button">Read More</div></a>
+                </div>  
+            </li>
+            <li>
+                <div class="slide-event uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left">
+                    <img src="images/dark.jpg" alt="" uk-cover>
+                </div>
+                <div class="uk-position-center uk-position-small block-on-slideshow text-center animate-custom">
+                    <h2 class="hd-slide">movie expo</h2>
+                    <a href="#" class="custom-link"><div class="custom-button">Read More</div></a>
+                </div>  
+            </li>
+        </ul>
+        <div class="uk-position-bottom-center uk-position-small">
+            <ul class="uk-dotnav">
+                <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+                <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+            </ul>
+        </div>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    </div>
+</div>
+<div class="bg-gradient-blue">
+    <div id="section-1" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="heading text-white text-center custom-f">event Expo</h1>
+                <div class="row justify-content-center pb-5">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <a href="#" class="custom-link">
+                            <div class="circle__animate">
+                                <img class="img_in_circle" src="images/icon-films.svg" width="50" >
+                            </div>
+                            <p class="text-circle text-white pt-3 text-center text-20 ">Films Expo</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <a href="#" class="custom-link">
+                            <div class="circle__animate">
+                                <img class="img_in_circle" src="images/icon-movie.svg" width="50" >
+                            </div>
+                            <p class="text-circle text-white pt-3 text-center text-20">Movie Expo</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <a href="#" class="custom-link">
+                            <div class="circle__animate">
+                                <img class="img_in_circle" src="images/icon-sound.svg" width="50" >
+                            </div>
+                            <p class="text-circle text-white pt-3 text-center text-20">Music Expo</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <a href="#" target="_blank" class="custom-link">
+                            <div class="circle__animate">
+                                <img class="img_in_circle" src="images/icon-digital.svg" width="50" >
+                            </div>
+                            <p class="text-circle text-white pt-3 text-center text-20">Digital Expo</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <a href="#" target="_blank" class="custom-link">
+                            <div class="circle__animate">
+                                <img class="img_in_circle" src="images/icon-housepro.svg" width="50" >
+                            </div>
+                            <p class="text-circle text-white pt-3 text-center text-20">Production Expo</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-white">
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="heading custom-f">new & comming soon</h2>
+                <div class="uk-margin-medium-top">
+                    <ul class="uk-flex-center" uk-tab>
+                        <li class="uk-active"><a href="#" class="text-20">ข่าวงานแสดงสินค้า</a></li>
+                        <li><a href="#" class="text-20">งานที่กำลังจะมาถึง</a></li>
+                    </ul>
+                    <ul  class="uk-switcher uk-margin" uk-switcher="animation: true">
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 custom-pd">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="images/news/thumbnail-news.jpg" alt="">
+                                        <div class="overlay">
+                                            <h2>News</h2>
+                                            <p>
+                                                <a href="#" class="text-20">ดูเพิ่มเติม</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 custom-pd">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="images/news/thumbnail-news2.jpg" alt="">
+                                        <div class="overlay">
+                                            <h2>News</h2>
+                                            <p>
+                                                <a href="#" class="text-20">ดูเพิ่มเติม</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 custom-pd">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="images/news/thumbnail-news3.jpg" alt="">
+                                        <div class="overlay">
+                                            <h2>News</h2>
+                                            <p>
+                                                <a href="#" class="text-20">ดูเพิ่มเติม</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 custom-pd">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="images/news/thumbnail-news4.jpg" alt="">
+                                        <div class="overlay">
+                                            <h2>News</h2>
+                                            <p>
+                                                <a href="#" class="text-20">ดูเพิ่มเติม</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 custom-pd">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="images/news/thumbnail-news5.jpg" alt="">
+                                        <div class="overlay">
+                                            <h2>News</h2>
+                                            <p>
+                                                <a href="#" class="text-20">ดูเพิ่มเติม</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-fix pt-3 pb-3">
+    <div class="bg-text">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="heading text-white">video</h2>
+                </div>
+                <div class="col-md-6  ">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/9CiCCl_AybY" frameborder="0"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/SdLF3xFCvAk" frameborder="0"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/JUVZKWXAS98" frameborder="0"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/CeKCH-bUh9Q" frameborder="0"></iframe>
+                </div>
+                <div class="col-md-12 pt-3 pb-3 text-center text-lg-right text-md-right">
+                    <a href="video.html" class="custom-link custom-button" >แสดงเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uk-position-relative uk-light" uk-slideshow="animation: push;max-height:400;" >
+    <ul class="uk-slideshow-items">
+        <li class="slide-event">
+            <img src="images/photo.jpg" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small text-center block-on-slideshow">
+                <h2 class="text-center custom-f">Motor Expo</h2>
+                <button class="uk-button uk-button-primary">ดูรายละเอียด</button>
+            </div>  
+        </li>
+        <li class="slide-event">
+            <img src="images/dark.jpg" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small text-center block-on-slideshow">
+                <h2 class="text-center custom-f">Photo Fair</h2>
+                <button class="uk-button uk-button-primary">ดูรายละเอียด</button>
+            </div>  
+        </li>
+        <li class="slide-event">
+            <img src="images/photo2.jpg" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small text-center block-on-slideshow">
+                <h2 class="text-center custom-f">Commart Expo</h2>
+                <button class="uk-button uk-button-primary">ดูรายละเอียด</button>
+            </div>  
+        </li>
+    </ul>
+    <div class="uk-position-bottom-center uk-position-small">
+        <ul class="uk-dotnav">
+            <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+            <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+            <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+        </ul>
+    </div>
+</div>
+<a href="javascript:" id="return-to-top"><img src="images/totop.png" width="100%" class="img-totop"></a>
+<div w3-include-html="footer.html"></div>
+</div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+</html>
+
