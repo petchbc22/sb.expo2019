@@ -33,6 +33,7 @@ $(function(){
     $("#news").find(".js-active-news").addClass('active');
     $("#product-brand").find(".js-active-product-brand").addClass('active');
     $("#event").find(".js-active-event").addClass('active');
+    $("#login").find(".js-active-login").addClass('active');
 });
 // swap color navbar
 $(window).scroll(function() {    
