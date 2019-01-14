@@ -264,6 +264,9 @@ ul.navbar-nav {
 .bg-black{
   background-color: $black;
 }
+.bg-darkblue{
+  background-color :$navy-st;
+}
 .bg-banner {
   background: rgba(0,0,0,0.7);
   &:before {
@@ -868,7 +871,11 @@ figure {
     font-size: 20px !important; 
   }
 }
-
+.custom-f-h1{
+  @media (max-width:450px) {
+    font-size: 27px !important; 
+  }
+}
 //searchbar
  .search-box{
   max-width: 850px;
@@ -936,6 +943,24 @@ figure {
     background-color: #fff;
     border : 2px solid $navy-13;
     color: $navy-13 !important;
+  
+  }
+}
+.custom-button-w
+{
+  font-size: 20px;
+  background-color: $white;
+  color: $navy-13;
+  // border: 2px solid #fff;
+  width: 130px;
+  padding:10px;
+  margin: auto;
+  transition: .3s;
+  &:hover{
+    transition: .3s;
+    background-color: $navy-13;
+    border : 2px solid $white;
+    color: $white !important;
   
   }
 }
@@ -1155,5 +1180,39 @@ padding: 5px;
     display: none;
   }
 }
-
-
+.mh-50{
+  min-height: 80px;
+}
+.mw-300-uk-slide{
+  max-width: 278px;
+  @media (max-width:1200px){
+    max-width: 312px;
+  }
+  @media (max-width:992px){
+    max-width: 350px;
+  }
+  @media (max-width:768px){
+    max-width: 255px;
+  }
+  @media (max-width:575px){
+    max-width: 270px;
+  }
+ 
+  @media (max-width:375px){
+    max-width: 340px;
+  }
+  @media (max-width:330px){
+    max-width: 285px;
+  }  
+}
+.bd-rd{
+  border-radius: 10px;
+}
+.custom-input{
+  background: transparent !important;
+  color: white;
+  height: 45px;
+  &:focus{
+    color: white !important;
+  }
+}
