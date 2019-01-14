@@ -4,7 +4,13 @@
                 <div class="uk-navbar-left">
                     <a href="/" class="branding d-block">expo thailand</a>
                 </div>
+               
                 <div class="uk-navbar-right">
+                    <div class="search-bar-mb">
+                        <a href="#opensearch" uk-toggle>
+                            <img src="images/search.svg" width="25" class="p-1 ml-2" style="cursor:pointer;">
+                        </a>
+                    </div>
                     <a href="#menu-of-canvas" class="d-sm-flex d-lg-none pr-0 uk-navbar-toggle uk-light js-hamberger text-white" uk-toggle uk-navbar-toggle-icon></a>
                     <div class="d-none d-lg-block">
                         <ul class="uk-navbar-nav nav-desktop js-nav-desktop">
@@ -17,38 +23,38 @@
                             <li class="navbar-items js-active-product-brand">
                                 <a href="product-brand.html" >BRAND</a>
                             </li>
-                            <li class="navbar-items pb-1 js-active-video">
-                                <a href="video.html" >VIDEO</a>
+                            <li class="navbar-items js-active-news">
+                                <a href="news.html" >NEWS</a>
                             </li>
                             <li class="navbar-items pb-1 js-active-about">
                                 <a href="about.html" >ABOUT</a>
                             </li>
                             <li class="navbar-items pb-1">
-                                <a href="#modal-sections" uk-toggle>LOGIN</a>
-                                <div id="modal-sections" uk-modal>
-                                    <div class="uk-modal-dialog">
+                                <a href="login.html">LOGIN</a>
+                            </li>
+                            <li class="pb-1 search-bar-dt">
+                                <a href="#opensearch" uk-toggle>
+                                    <img src="images/search.svg" width="25" class="p-1 ml-2" style="cursor:pointer;" >
+                                </a>
+                                <div id="opensearch" uk-modal>
+                                    <form class="uk-modal-dialog" method="post" action="search.php">
                                         <button class="uk-modal-close-default" type="button" uk-close></button>
                                         <div class="uk-modal-header">
-                                            <h2 class="uk-modal-title">LOGIN</h2>
+                                            <h2 class="uk-modal-title text-center">ค้นหา</h2>
                                         </div>
                                         <div class="uk-modal-body">
-                                            <form>
-                                                <div class="form-group">
-                                                    <label for="exampleInputEmail1">Email address</label>
-                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="exampleInputPassword1">Password</label>
-                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                                </div>
-                                            </form>
+                                            <div class="form-group">
+                                                
+                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="กรุณากรอกคำค้นหาของคุณ">
+                                            </div>
                                         </div>
                                         <div class="uk-modal-footer uk-text-right">
-                                            <button class="uk-button uk-button-primary" type="button">เข้าสู่ระบบ</button>
-                                            <a href="#">สมัครสมาชิก</a>
+                                            <button class="uk-button uk-button-primary" type="button">ค้นหา</button>
+                                      
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
+                  
                             </li>
                         </ul>
                     </div>

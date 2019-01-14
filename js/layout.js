@@ -1,3 +1,4 @@
+// include html
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
@@ -25,18 +26,15 @@ function includeHTML() {
     }
   }
 };
-
+// active navbar
 $(function(){
     $("#homepage").find(".js-active-home").addClass('active');
     $("#about").find(".js-active-about").addClass('active');
-    $("#video").find(".js-active-video").addClass('active');
+    $("#news").find(".js-active-news").addClass('active');
     $("#product-brand").find(".js-active-product-brand").addClass('active');
     $("#event").find(".js-active-event").addClass('active');
 });
-
-
-
-
+// swap color navbar
 $(window).scroll(function() {    
   var scroll = $(window).scrollTop();
 
@@ -55,7 +53,7 @@ $(window).scroll(function() {
       $(".js-swap-height").removeClass("h-80");
   }
 });
-
+// totop
 $(window).scroll(function() {
   if ($(this).scrollTop() >= 300) {       
       $('#return-to-top').fadeIn(200);    
@@ -68,22 +66,23 @@ $('#return-to-top').click(function() {
       scrollTop : 0                      
   }, 500);
 });
-$(function() {
-  $("#anchor").on("click", function(event) {
-    var hash = $(this).attr("data-target"),
-      target = $("#" + hash);
+// $(function() {
+//   $("#anchor").on("click", function(event) {
+//     var hash = $(this).attr("data-target"),
+//       target = $("#" + hash);
 
-    event.preventDefault();
-    $("html, body").animate({
-        scrollTop: $(target).offset().top
-      },
-      800,
-      function() {
-        window.location.hash = hash;
-      }
-    );
-  });
-});
+//     event.preventDefault();
+//     $("html, body").animate({
+//         scrollTop: $(target).offset().top
+//       },
+//       800,
+//       function() {
+//         window.location.hash = hash;
+//       }
+//     );
+//   });
+// });
+// humberger button responsive function
 $(function(){
   var screen992       = 992
       ,wtopnav         = $(".wrapper-topnav");
@@ -96,7 +95,7 @@ $(function(){
   }
   $(window).resize(responsive).ready(responsive);
 });
-
+// filter search
   var options = {
 	valueNames: [
 		'name',
@@ -163,18 +162,5 @@ $(function(){
 	});
 });
 // 
-$(function() {
-    $('#nav').click(function() {
-      $(this).toggleClass('open');
-    });
-  });
-  
-
-// $('#homepage').each(function() {
-//   $(this).find('.js-active').addClass('active');
-// });
-
-
-
 
 
