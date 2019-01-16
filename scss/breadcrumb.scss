@@ -86,7 +86,7 @@ $breadcrumb-divider-color:                           $global-muted-color !defaul
     content: $breadcrumb-divider;
     display: inline-block;
     margin: 0 $breadcrumb-divider-margin-horizontal;
-    color: $breadcrumb-divider-color;
+    color: $white ;
     @if(mixin-exists(hook-breadcrumb-divider)) {@include hook-breadcrumb-divider();}
 }
 

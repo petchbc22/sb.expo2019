@@ -96,6 +96,7 @@ ul.navbar-nav {
   background: #010a2d;
   transition: background-color 0.4s ease-out;
 }
+
 .heading {
   display: flex;
   width: 100%;
@@ -214,9 +215,6 @@ ul.navbar-nav {
     @include mediaquery-subnav ;
   }
 }
-#detail{
- 
-}
 #news{
   .bg-blur-headding{
     background: url(../images/news-banner.jpg) fixed no-repeat;
@@ -236,11 +234,34 @@ ul.navbar-nav {
   }
 }
 #product-brand{
+  overflow-x: hidden !important;
   .bg-blur-headding{
     background: url(../images/brand-bg.jpg) fixed no-repeat;
     @include mediaquery-subnav ;
   }
+  .contact-circle{
+    .circle__animate{
+      background: url(../images/border-circle-contactus.png) no-repeat 100%/contain;
+    }
+  }
+  .circle__animate{
+    padding: 35px;
+    width: 120px;
+  }
+
 }
+#contact_us_sass{
+  .heading{
+    &::before{
+      flex: 0 20px;
+    }
+  }
+  p , h5{
+    font-family: 'kanitthin' !important;
+    font-weight: 600;
+  }
+}
+
 #footer{
   background-color: $black;
 }
@@ -258,7 +279,7 @@ ul.navbar-nav {
   height: 330px;
     &::before{
       content: "";
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.7);
       position: absolute;
       top: 0;
       bottom: 0;
@@ -430,7 +451,7 @@ figure {
   margin: auto;
   height: 100px;
   padding: 5px;
-  border-radius: 20px;
+ 
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -457,7 +478,7 @@ figure {
   padding: 16px 32px;
 }
 .text-sd{
-  text-shadow: 0em 0.3em 0.5em rgba(0,0,0,0.88)!important;
+  text-shadow: 5px 5px 5px rgba(241, 0, 0, 0.41);
 }
 .hd-slide{
   color: #ff2d54;
@@ -685,7 +706,6 @@ figure {
 
 
 .filter-group{
-  border-bottom: 1px solid rgba(148, 148, 148, 0.3);
   padding: 20px;
 }
 .underline{
@@ -757,13 +777,13 @@ figure {
     width: 30%;
   }
   .image{
-    width: 150px !important;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin: auto;
     padding: 5px;
   }
   .img-event{
-    padding-top:7px;
+    padding-top:0;
   }
   .list-group-image {
     margin-right: 10px;
@@ -792,7 +812,7 @@ figure {
     clear: both;
   }
   .mh-240{
-    min-height: auto;
+    min-height: 200px;
   }
  
 }
@@ -827,7 +847,7 @@ figure {
   color:$white;
 }
 .address{
-  color:$white;
+  color: lighten( $snow-gray, 30% ) ;
   font-family: 'kanitthin' !important;
   font-weight: 700;
 }
@@ -991,6 +1011,23 @@ figure {
 .hd-pagination{
   font-size: 45px;
 }
+.feature__div{
+  text-align: center;
+  &:hover{
+    .img_in_circle{
+      -webkit-transform: scale(1.2);
+      transform: rotate(-59deg) scale(1.2);
+    }
+    .text_circle{
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+    .circle__animate{
+      -webkit-transform: rotate(59deg);
+      transform: rotate(59deg);
+    }
+  }
+}
 .circle__animate{
   background: url(../images/circle-contactus.png) no-repeat 100%/contain;
   padding: 50px;
@@ -1001,14 +1038,7 @@ figure {
   transition: transform .3s ease;
   transition: transform .3s ease, -webkit-transform .3s ease;
   position: relative;
-  &:hover{
-    -webkit-transform: rotate(59deg);
-    transform: rotate(59deg);
-    .img_in_circle{
-      -webkit-transform: rotate(-59deg) scale(1.2);
-      transform: rotate(-59deg) scale(1.2);
-    }
-  }
+
   &:after{
     -webkit-transform: rotate(-59deg);
     transform: rotate(-59deg);
@@ -1018,6 +1048,15 @@ figure {
 .img_in_circle{
   -webkit-transform: rotate(0) scale(1);
   transform: rotate(0) scale(1);
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+.text_circle{
+  display: inline-block;
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: -webkit-transform .3s ease;
   transition: -webkit-transform .3s ease;
   transition: transform .3s ease;
@@ -1065,7 +1104,11 @@ figure {
 }
 .bd-bottom{
   padding-bottom: 20px;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid rgba(148,148,148,.3);
+}
+.bd-top{
+  padding-top: 20px;
+  border-top: 1px solid rgba(148,148,148,.3);
 }
 .custom-pd{
 padding: 5px;
@@ -1229,6 +1272,10 @@ padding: 5px;
     max-width: 285px;
   }  
 }
+.max-w-900{
+  max-width: 900px;
+  margin: auto;
+}
 .bd-rd{
   border-radius: 10px;
 }
@@ -1263,3 +1310,95 @@ padding: 5px;
   margin: auto;
  
 }
+.m-auto-custom-resp{
+  margin: auto;
+  @media (max-width:580px) {
+    margin: 0;
+  }
+}
+.border-detail-pdt{
+  border: 1px solid rgba(132, 132, 132, 0.47);
+  padding: 20px;
+  border-radius: 20px;
+}
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay-gallery{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: .3s ease;
+
+  &:hover{
+    transition: .3s ease;
+    opacity: .5;
+    .icon{
+
+      opacity: 1;
+   
+    }
+  }
+  .icon{
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+.bg-service-detail-c{
+  background: url(../images/bg-service-detail-content.jpg) fixed no-repeat;
+  opacity: 0.9;
+  position: relative;
+  text-align: center;
+  background-position: top;
+  padding: 35px 0px;
+
+    &::before{
+      content: "";
+      background: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    @media (max-width:992px) {
+      background-size: unset;
+    }
+}
+.img-service-company{
+  width: 120px;
+  height: 120px;
+  border: 3px solid gainsboro;
+  padding: 15px;
+  transition: .3s;
+  &:hover{
+    transition: .3s;
+    transform: scale(1.1);
+    .hv-sv-text{
+      transform: scale(1.1);
+    }
+  }
+
+}
+.text-no-ud{
+  text-decoration: none !important;
+}  

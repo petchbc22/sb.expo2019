@@ -15,49 +15,49 @@
     <div class="bg-blur-headding">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 uk-position-center text-center mt-35">
+                    <div class="col-md-12 uk-position-center text-center mt-35 animate-custom">
                         <div class="col-md-12 text-white">
-                            <h3 class="hd-pagination">บริษัททั้งหมด</h3>
+                            <h3 class="hd-pagination">โปรดักชั่นทั้งหมด</h3>
                         </div>
                         <ul class="uk-breadcrumb justify-content-center">
                             <li><a href="/" class="text-white text-20">หน้าแรก</a></li>
-                            <li><span class="text-danger text-20">บริษัท</span></li>
+                            <li><span class="text-danger text-20">โปรดักชั่น</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
     </div>
-        <div class="container pt-5">
-            <div id="users" class="row ">
-                <div class="col-md-12">
-                    <div class="filter-group row pb-1">
-                        <div class="form-group col-lg-6 col-xl-4">
+        <div class="container pt-5 animate-custom">
+            <div id="users" class="row">
+                <div class="col-md-12 ">
+                    <div class="filter-group row pb-1 max-w-900">
+                        <div class="form-group col-md-12 ">
                             <form class="w-100 uk-search uk-search-default box-shad ">
                                 <a href="" class=" uk-search-icon-flip bg-white bd-white bd-search" uk-search-icon></a>
                                 <input class="search uk-search-input bg-white" type="text" placeholder="ค้นหา...">
                             </form>
                         </div>
-                        <div class="form-group col-lg-6 col-xl-3 text-white d-flex flex-sm-row flex-column justify-content-center">
-                            <div class="radio-inline p-1">
-                                <label>
+                        <div class="form-group col-md-6 text-white d-flex flex-sm-row flex-column justify-content-center ">
+                            <div class="radio-inline p-1 m-auto-custom-resp">
+                                <label class="mb-0">
                                     <input class="filter-all" type="radio" value="all" name="local" id="local-all" checked /> บริษัททั้งหมด
                                 </label>
                             </div>
-                            <div class="radio-inline p-1">
-                                <label>
+                            <div class="radio-inline p-1 m-auto-custom-resp">
+                                <label class="mb-0">
                                     <input class="filter" type="radio" value="thai" name="local" id="local-female" /> บริษัทประเทศไทย
                                 </label>
                             </div>
-                            <div class="radio-inline p-1">
-                                <label>
+                            <div class="radio-inline p-1 m-auto-custom-resp">
+                                <label class="mb-0">
                                     <input class="filter" type="radio" value="abroad" name="local" id="local-male" /> บริษัทต่างชาติ
                                 </label>
                             </div>
                         </div>
-                        <div class="form-group col-lg-6 col-xl-3 text-white d-flex justify-content-center">
+                        <div class="form-group col-md-6 text-white d-flex justify-content-center">
                             <div class="row">
                                 <div class="p-1 m-auto">
-                                    <p class="">จังหวัด</p>
+                                    <p class="mb-0">จังหวัด</p>
                                 </div>
                                 <div class="p-1">
                                     <select id="ddlFilter" class="form-control w-150">
@@ -69,11 +69,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group col-lg-6 col-xl-2 text-white text-center pt-1">
+                        <div class="form-group col-md-12 text-white text-center pt-1">
                             <button class="btn btn-danger" onclick="resetList();">ล้างการกรอง</button>
                         </div>
                     </div>
-                        <div class="col-md-12 text-right pt-3  swap-resp">
+                        <div class="col-md-12 text-right pt-3 bd-top swap-resp">
                             <img src="images/icon-grid-w.svg" id="grid" class="icon-hv" width="30">
                             <img src="images/icon-list-w.svg" id="list" class="icon-hv" width="30">
                         </div>
