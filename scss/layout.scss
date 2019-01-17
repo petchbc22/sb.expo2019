@@ -865,17 +865,24 @@ figure {
   0%   { opacity: 0;}
   50% { opacity: 1;}
 }
+@keyframes left-right {
+  0%   { opacity: 0;left:-50%;}
+  50% { left:0;opacity: 1;}
+}
 .animate-custom{
-
   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
   animation-name: example;
   animation-duration: 4s;
   animation-direction: normal;  
 }
-
-
-
+.animate-left-right{
+  -webkit-animation-name: left-right; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: left-right;
+  animation-duration: 4s;
+  animation-direction: normal;  
+}
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
@@ -1340,14 +1347,11 @@ padding: 5px;
   width: 100%;
   opacity: 1;
   transition: .3s ease;
-
   &:hover{
     transition: .3s ease;
-    opacity: .5;
+    opacity: .3;
     .icon{
-
       opacity: 1;
-   
     }
   }
   .icon{
@@ -1370,7 +1374,6 @@ padding: 5px;
   text-align: center;
   background-position: top;
   padding: 35px 0px;
-
     &::before{
       content: "";
       background: rgba(0, 0, 0, 0.7);
@@ -1390,14 +1393,19 @@ padding: 5px;
   border: 3px solid gainsboro;
   padding: 15px;
   transition: .3s;
+}
+.feature_sv{
   &:hover{
-    transition: .3s;
-    transform: scale(1.1);
+    .img-service-company{
+      transition: .3s;
+      transform: scale(1.1);
+      box-shadow:5px 5px 30px grey; 
+    }
     .hv-sv-text{
+      transition: .3s;
       transform: scale(1.1);
     }
   }
-
 }
 .text-no-ud{
   text-decoration: none !important;

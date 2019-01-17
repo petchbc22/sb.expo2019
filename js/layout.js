@@ -62,23 +62,7 @@ $('#return-to-top').click(function() {
       scrollTop : 0                      
   }, 500);
 });
-// $(function() {
-//   $("#anchor").on("click", function(event) {
-//     var hash = $(this).attr("data-target"),
-//       target = $("#" + hash);
-
-//     event.preventDefault();
-//     $("html, body").animate({
-//         scrollTop: $(target).offset().top
-//       },
-//       800,
-//       function() {
-//         window.location.hash = hash;
-//       }
-//     );
-//   });
-// });
-// humberger button responsive function
+// clone menulist to navbar mobile 
 $(function(){
   var screen992       = 992
       ,wtopnav         = $(".wrapper-topnav");
@@ -90,6 +74,7 @@ $(function(){
       }
   }
   $(window).resize(responsive).ready(responsive);
+  
 });
 // filter search
   var options = {
