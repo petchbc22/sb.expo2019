@@ -61,7 +61,7 @@ $breadcrumb-divider-color:                           $global-muted-color !defaul
 /* Hover + Focus */
 .uk-breadcrumb > * > :hover,
 .uk-breadcrumb > * > :focus {
-    color: $breadcrumb-item-hover-color;
+    color: #a2a2a2;
     text-decoration: $breadcrumb-item-hover-text-decoration;
     @if(mixin-exists(hook-breadcrumb-item-hover)) {@include hook-breadcrumb-item-hover();}
 }

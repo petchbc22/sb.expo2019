@@ -1417,11 +1417,12 @@ padding: 5px;
 }
 .bg-service-detail-c{
   background: url(../images/bg-service-detail-content.jpg) fixed no-repeat;
-  opacity: 0.9;
+  opacity: .9;
   position: relative;
   text-align: center;
-  background-position: top;
-  padding: 35px 0px;
+  background-position: center;
+  padding: 35px 0;
+  background-size: 100%;
     &::before{
       content: "";
       background: rgba(0, 0, 0, 0.7);
@@ -1447,7 +1448,7 @@ padding: 5px;
     .img-service-company{
       transition: .3s;
       transform: scale(1.1);
-      border: 3px solid #790000;
+      border: 3px solid $navy-13;
       border-radius: 10px;
       padding: 5px;
       // box-shadow:5px 5px 30px grey; 
@@ -1474,6 +1475,7 @@ padding: 5px;
 .bd-searchbar{
   border: 10px solid rgba(148,148,148,.3);
   border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
 }
 .bd-r{
   border-right: 1px solid rgba(148,148,148,.3);
@@ -1489,4 +1491,7 @@ padding: 5px;
     margin: unset;
     padding-top: 10px;
   }
+}
+.invert-c{
+  filter: invert(100%);
 }
