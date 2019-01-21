@@ -257,7 +257,7 @@ ul.navbar-nav {
   }
 
 }
-#contact_us_sass{
+.contact_us_sass{
   .heading{
     &::before{
       flex: 0 20px;
@@ -1418,11 +1418,12 @@ padding: 5px;
 .bg-service-detail-c{
   background: url(../images/bg-service-detail-content.jpg) fixed no-repeat;
   opacity: .9;
+  background-attachment:fixed;
   position: relative;
   text-align: center;
   background-position: center;
   padding: 35px 0;
-  background-size: 100%;
+  background-size: 100% 100%;
     &::before{
       content: "";
       background: rgba(0, 0, 0, 0.7);
@@ -1467,9 +1468,9 @@ padding: 5px;
   @include hover-univeral;
 }
 .img-logo-detail-pdc{
-  width: 400px;
+  width: 340px;
   @media (max-width:992px) {
-    width: 100%;
+    width: 200px;
   }
 }
 .bd-searchbar{
@@ -1494,4 +1495,23 @@ padding: 5px;
 }
 .invert-c{
   filter: invert(100%);
+}
+.bd-custom{
+  border-left: 1px solid gainsboro;
+  border-right: 1px solid gainsboro;
+  @media (max-width:768px) {
+    border-left: none;
+    border-right: none;
+  }
+}
+.resp-hidden{
+  @media (max-width:768px) {
+    display: none;
+  }
+}
+.bd-breadcrumb{
+  border-right: 1px solid #5a5858;
+  @media (max-width:768px){
+    border-right: none;
+  }
 }
