@@ -142,6 +142,9 @@ $(function(){
 		}
 	});
 });
-// 
-
+// swap display gird or list
+$(function() {
+  $('#list').click(function(event){event.preventDefault();$('#users .item').addClass('list-group-item');});
+  $('#grid').click(function(event){event.preventDefault();$('#users .item').removeClass('list-group-item');$('#users .item').addClass('grid-group-item');});
+});
 
